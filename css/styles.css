@@ -1,0 +1,139 @@
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+    font-family: 'Poppins';
+    color: var(--Grayish-Blue);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    text-align: center;
+    margin: 3em;
+    width: 40%;
+}
+
+.title{
+    font-size: 2em;
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
+    margin: 0;
+}
+
+.sub-title{
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin: 0;
+}
+
+.text{
+    font-weight: 400;
+    color: var(--Grayish-Blue-Gray);
+}
+
+.cont-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-side{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px 1px var(--Grayish-Blue);
+    padding: 1em 2em;
+    margin: 1em;
+    width: 20em;
+}
+
+.card-title{
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.card-img{
+    margin: 3em 0 1em 0; 
+    text-align: right;  
+}
+
+.supervisor{
+    border-top: 4px solid var(--Cyan);
+}
+
+.team-builder{
+    border-top: 4px solid var(--Red);
+    margin-bottom: 2em;
+}
+
+.karma{
+    border-top: 4px solid var(--Orange);
+}
+
+.calculator{
+    border-top: 4px solid var(--Blue);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: right; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* medias queries */ 
+@media(max-width: 1140px) {
+    .container{
+        margin: 3em 1.5em;
+    }   
+    
+    .header{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    .sub-title{
+        font-size: 1.8em;
+    }
+
+    .text{
+        font-size: 1.2em;
+    }
+
+    .cont-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 19em;
+    }
+
+    .attribution { 
+        text-align: center; 
+    }
+}
